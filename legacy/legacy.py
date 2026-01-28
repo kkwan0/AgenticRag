@@ -13,7 +13,7 @@ from llama_index.llms.llama_cpp import LlamaCPP
 from llama_cpp import Llama
 from sentence_transformers import SentenceTransformer
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-
+from llama_index.core.schema import TextNode, MetadataMode
 
 from llama_index.vector_stores.postgres import PGVectorStore
 
@@ -87,7 +87,8 @@ text_chunks = []
 doc_idxs = []
 
 for doc_idx, doc in enumerate(documents):
-    chunks = text_parser.split_text(doc.text)
+    null_removed = doc.text.replace('\x00', '')
+    chunks = text_parser.split_text(null_removed)
     text_chunks.extend(chunks)
     doc_idxs.extend([doc_idx] * len(chunks))
 
@@ -101,8 +102,8 @@ for idx, chunk in enumerate(text_chunks):
 
     # embed
     node.embedding = embed_model.encode(
-        node.get_content(metadata_mode="all"),
-        normalize_embeddings=True )
+        node.get_content(metadata_mode=MetadataMode.ALL),
+        normalize_embeddings=True ).tolist()
 
     nodes.append(node)
 
@@ -129,18 +130,19 @@ class VectorDBRetriever(BaseRetriever):
         query_embedding = embed_model.encode(
             query_bundle.query_str,
             normalize_embeddings=True
-            )
+            ).tolist()
 
 
         vector_store_query = VectorStoreQuery(
             query_embedding=query_embedding,
             similarity_top_k=self._similarity_top_k,
-            mode=self._query_mode,
-        )
+            )
 
         query_result = self._vector_store.query(vector_store_query)
 
         nodes_with_scores = []
+        if query_result.nodes is None:
+            return nodes_with_scores
         for index, node in enumerate(query_result.nodes):
             score = None
             if query_result.similarities is not None:
@@ -153,7 +155,7 @@ class VectorDBRetriever(BaseRetriever):
 retriever = VectorDBRetriever(
     vector_store=vector_store,
     embed_model=embed_model,
-    query_mode="default",
+    # query_mode="default",
     similarity_top_k=3,
 )
 
