@@ -20,6 +20,11 @@ def create_database():
     conn.autocommit = True
 
     with conn.cursor() as c:
+        c.execute(f"""
+                SELECT pg_terminate_backend(pid) 
+                FROM pg_stat_activity 
+                WHERE datname = '{db_name}' AND pid <> pg_backend_pid()
+            """)
         c.execute(f"DROP DATABASE IF EXISTS {db_name}")
         c.execute(f"CREATE DATABASE {db_name}")
 

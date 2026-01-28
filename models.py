@@ -1,7 +1,7 @@
-# models.py
 from sentence_transformers import SentenceTransformer
 from llama_index.llms.llama_cpp import LlamaCPP
-from config import EMBED_MODEL_NAME, LLM_PATH
+from config import EMBED_MODEL_NAME, LLM_NAME, LLM_TEMPERATURE, LLM_TIMEOUT, LLM_KWARGS
+from llama_index.llms.ollama import Ollama
 
 _embed_model = None
 _llm = None
@@ -17,12 +17,18 @@ def get_llm():
     global _llm
     if _llm is None:
         print("Loading LLM...")
-        _llm = LlamaCPP(
-            model_url=LLM_PATH,
-            model_kwargs={"n_gpu_layers": 40},
-            temperature=0.1,
-            max_new_tokens=256,
-            context_window=3900,
-            verbose=True,
+        _llm = Ollama(
+            model="llama2:13b",
+            request_timeout=LLM_TIMEOUT,
+            temperature=LLM_TEMPERATURE
         )
+
+        # _llm = LlamaCPP(
+        #     model_url=LLM_PATH,
+        #     model_kwargs={"n_gpu_layers": 40},
+        #     temperature=0.1,
+        #     max_new_tokens=256,
+        #     context_window=3900,
+        #     verbose=True,
+        # )
     return _llm
