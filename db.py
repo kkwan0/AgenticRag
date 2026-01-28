@@ -9,7 +9,7 @@ port = DB_PORT
 user = DB_USER
 
 def create_database():
-    # Create database fresh
+    # Create the Postgres database if it doesn't exist
     conn = psycopg2.connect(
         dbname="postgres",
         host=host,
@@ -19,7 +19,7 @@ def create_database():
     )
     conn.autocommit = True
 
-    with conn.cursor() as c:
+    with conn.cursor() as c: # remove active connections to allow drop
         c.execute(f"""
                 SELECT pg_terminate_backend(pid) 
                 FROM pg_stat_activity 
@@ -31,8 +31,7 @@ def create_database():
     conn.close()
 
 
-def connect_vector_store() -> PGVectorStore: 
-    """Get a connection to the vector store."""
+def connect_vector_store() -> PGVectorStore: # Connect to the Postgres vector store
     return PGVectorStore.from_params(
         database=DB_NAME,
         host=DB_HOST,
