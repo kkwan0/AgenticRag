@@ -1,34 +1,21 @@
+import dspy
 from sentence_transformers import SentenceTransformer
 from llama_index.llms.llama_cpp import LlamaCPP
 from config import EMBED_MODEL_NAME, LLM_NAME, LLM_TEMPERATURE, LLM_TIMEOUT, LLM_KWARGS
 from llama_index.llms.ollama import Ollama
 
 _embed_model = None
-_llm = None
-
+_lm = None
 def get_embed_model():
     global _embed_model
     if _embed_model is None:
         print("Loading embedding model...")
         _embed_model = SentenceTransformer(EMBED_MODEL_NAME)
     return _embed_model
-
-def get_llm():
-    global _llm
-    if _llm is None:
-        print("Loading LLM...")
-        _llm = Ollama(
-            model="llama2:13b",
-            request_timeout=LLM_TIMEOUT,
-            temperature=LLM_TEMPERATURE
-        )
-
-        # _llm = LlamaCPP(
-        #     model_url=LLM_PATH,
-        #     model_kwargs={"n_gpu_layers": 40},
-        #     temperature=0.1,
-        #     max_new_tokens=256,
-        #     context_window=3900,
-        #     verbose=True,
-        # )
-    return _llm
+def get_lm():
+    global _lm
+    if _lm is None:
+        print("Loading DSPY LLM...")
+        _lm = dspy.LM('ollama_chat/llama2:13b', api_base='http://localhost:11434', api_key='')
+        dspy.configure(lm=_lm)
+    return _lm

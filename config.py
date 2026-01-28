@@ -24,3 +24,11 @@ CHUNK_SIZE = 1024
 
 # Retrieval
 SIMILARITY_TOP_K = 3
+
+#Other
+
+FILE_PATHS = [
+    "/mnt/c/Users/freen/Documents/AgenticRag/supportingDocuments/ug_bulletin2025-26.pdf",
+    "/mnt/c/Users/freen/Documents/AgenticRag/supportingDocuments/ug_bulletin2024-25.pdf",
+    "/mnt/c/Users/freen/Documents/AgenticRag/supportingDocuments/ug_bulletin2023-24.pdf",
+]
