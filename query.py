@@ -2,6 +2,8 @@ from retriever import VectorDBRetriever
 from db import connect_vector_store
 from models import get_embed_model, get_llm
 from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core import PromptTemplate
+
 
 def query(query_str: str):
     print("loading models")
@@ -18,7 +20,15 @@ def query(query_str: str):
         similarity_top_k=2,
     )
     
-    query_engine = RetrieverQueryEngine.from_args(retriever, llm=llm)
+    qa_template = PromptTemplate(
+    "Context information is below.\n"
+    "---------------------\n"
+    "{context_str}\n"
+    "---------------------\n"
+    "Given the context information, answer the question: {query_str}\n"
+    )
+    
+    query_engine = RetrieverQueryEngine.from_args(retriever, llm=llm, text_qa_template=qa_template)
     
     print("running query")
     response = query_engine.query(query_str)
