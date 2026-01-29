@@ -17,7 +17,7 @@ LM_NAME = "ollama_chat/llama2:13b" # DSPY LLM name
 
 # Chunking
 CHUNK_SIZE = 1024
-
+BATCH_SIZE = 32
 # Retrieval
 SIMILARITY_TOP_K = 3
 TOP_K = 3
