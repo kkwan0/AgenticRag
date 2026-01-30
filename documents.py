@@ -7,12 +7,9 @@ from config import CHUNK_SIZE, BATCH_SIZE
 import re
 
 def load_documents(file_paths: List[str]):
-    return SimpleDirectoryReader(input_files=file_paths, file_metadata=get_metadata).load_data()
+    return SimpleDirectoryReader(input_files=file_paths).load_data()
 
-def get_metadata(filename: str) -> dict:
-    return {
-        "source": filename
-    }
+
     
 def chunk_documents(documents) -> List[TextNode]:
     text_parser = SentenceSplitter(chunk_size=CHUNK_SIZE)
@@ -21,7 +18,7 @@ def chunk_documents(documents) -> List[TextNode]:
     for doc in documents:
         clean_text = doc.text.replace('\x00', '')
         chunks = text_parser.split_text(clean_text)
-        doc_metadata = doc.get_metadata()
+        doc_metadata = doc.metadata
 
         for chunk in chunks:
             node = TextNode(text=chunk)
@@ -39,6 +36,6 @@ def embed_nodes(nodes: List[TextNode], embed_model) -> List[TextNode]:
         batch_size=BATCH_SIZE
     ).tolist()
     for node, embedding in zip(nodes, embeddings):
-        node.embedding = embedding.tolist()
+        node.embedding = embedding
     return nodes
     
