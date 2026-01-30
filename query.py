@@ -1,8 +1,10 @@
+import dspy
 from models import get_lm, get_named_lm
 from rag import RAG
 from config import TOP_K, LM_TESTS
 from dataclasses import dataclass
 from questionBank import QUERY_QUESTIONS
+import time
 @dataclass
 class QueryResult():
     answer: str
@@ -30,16 +32,27 @@ def query(question: str) -> QueryResult:
 
 def test_models():
     for model_name in LM_TESTS:
-        get_named_lm(model_name)
+        run_id = str(int(time.time()))  # Unique per run
+        timelist = []
+        print(f"Testing model: {model_name}")
+        lm = get_named_lm(model_name)
+        dspy.configure(lm=lm)
         rag = RAG(k=TOP_K)
         for question in QUERY_QUESTIONS:
-            result = rag(question=question)
+            start_question = time.time()
+            unique_question = f"{question} (Run ID: {run_id})"
+            result = rag(question=unique_question)
             print("========================================")
+            print(f"Model: {model_name}")
             print(f"Question: {question}")
             print(f"Answer: {result.answer}")
             print("Sources:")
             for source in result.sources:
                 print(f"  - {source.get('file_name')} | Page: {source.get('page_label')}")
+            end_question = time.time()
+            timelist.append(end_question - start_question)
+            print(f"Time taken for this question: {end_question - start_question} seconds")
             print("========================================\n")
-    
-   
+        print(f"Average time for each model: {model_name}")
+        print(f"Total time: {sum(timelist)} seconds")
+        print(f"Average time per question: {sum(timelist) / len(timelist)} seconds")

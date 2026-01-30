@@ -1,4 +1,4 @@
-from query import query
+from query import query, test_models
 from ingest import ingest
 import argparse
 from config import FILE_PATHS
@@ -13,9 +13,10 @@ def main():
         ingest(FILE_PATHS)
         #if flag set to rebuild, ingest documents
     #already ingested
-    answer = query("Can I do a literature review for my signature work?")
-    print(answer.answer)
-    print(answer.formatted_sources())
+    # answer = query("Can I do a literature review for my signature work?")
+    # print(answer.answer)
+    # print(answer.formatted_sources())
+    test_models()
     
     
 if __name__ == "__main__":

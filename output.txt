@@ -1,0 +1,974 @@
+Testing model: ollama_chat/llama3.1:8b
+Loading ollama_chat/llama3.1:8b LLM...
+Loading embedding model...
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: How do I get my transcript?
+Answer: You can request a transcript from the host institution where you took the courses.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.3744785785675049 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What is the process for applying for graduation?
+Answer: Students must submit the "Apply for Graduation" form through the Duke Kunshan University student information system to apply for graduation.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.03428506851196289 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: Can I do a literature review for my signature work?
+Answer: It is possible to include a literature review as part of your Signature Work project, but it is not explicitly stated in the provided context. It's best to consult with your mentor or academic advisor to confirm its acceptability.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.03583931922912598 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What resources are available for mental health support on campus?
+Answer: Students can refer themselves or others to Student Care by visiting https://dukekunshan-advocate.symplicity.com/care_report/, and the campus emergency hotline (120) should be called in urgent situations.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.03342843055725098 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: How can I find information about study abroad programs?
+Answer: You can find information about study abroad programs on the Office of Global Education website (https://globaled.dukekunshan.edu.cn) or by contacting them to arrange an individual advising session.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.03391098976135254 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What are the steps to change my major?
+Answer: Consult with an academic advisor, complete a Change of Major form, have it reviewed by the relevant departmental chair or dean, and review and meet all requirements for your new major.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.03766274452209473 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What is the core curriculum for Computer Science majors?
+Answer: The core curriculum for Computer Science majors consists of the following required or recommended courses:
+* COMPSCI 20: Computer Science Principles
+* COMPSCI 101: Introduction to Computer Science
+* COMPSCI 201: Introduction to Programming and Data Structures
+* COMPSCI 203: Discrete Math for Computer Science
+* COMPSCI 204: Introduction to Artificial Intelligence
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.04153728485107422 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: How do I access the online library resources?
+Answer: Unfortunately, I couldn't find any information in the provided context on accessing online library resources. You may want to check with the university's library or IT department for assistance.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.04102587699890137 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: This information cannot be found in the provided context.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.03281688690185547 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What common core courses are required for all undergraduates?
+Answer: The three required common core courses for all undergraduates are:
+1. China in the World (Year 1)
+2. Global Challenges in Science, Technology, and Health (Year 2)
+3. Ethics, Citizenship & the Examined Life (Year 3)
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.04185843467712402 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What are the 7 principles of DKU academic advising
+Answer: Unfortunately, I am unable to provide a clear answer based on the provided text. If you have more information about what you are looking for, please let me know and I will do my best to help.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.042284250259399414 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: What happens if I am late on my tuition payment?
+Answer: If you're late on your tuition payment, you may be subject to the same refund policy as students who withdraw or take a leave of absence, depending on the specific circumstances and the university's policies regarding payment deadlines. It's best to check with the university directly for more information on their payment policies.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.04099607467651367 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.1:8b
+Question: Can I apply for on-campus housing?
+Answer: Yes, you can apply for on-campus housing as an undergraduate student at Duke Kunshan University.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.0335993766784668 seconds
+========================================
+
+Average time for each model: ollama_chat/llama3.1:8b
+Total time: 0.823723316192627 seconds
+Average time per question: 0.06336333201481746 seconds
+Testing model: ollama_chat/llama3.2:1b
+Loading ollama_chat/llama3.2:1b LLM...
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: How do I get my transcript?
+Answer: You can request a transcript by sending an email to the Office of Registrar at Duke Kunshan University, providing your student ID and any relevant course numbers. The Office will issue a transcript upon receipt of this information.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.1292121410369873 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What is the process for applying for graduation?
+Answer: Answer: The student should submit an "Apply for Graduation" form in the Duke Kunshan University student information system before establishing deadlines.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.035962820053100586 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: Can I do a literature review for my signature work?
+Answer: No
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.11413908004760742 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What resources are available for mental health support on campus?
+Answer: Student Care, SASO, provide mental health resources on campus.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.10296893119812012 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: How can I find information about study abroad programs?
+Answer: You can explore the following resources on the website:
+
+1. "Study Abroad Programs" - This section lists all approved programs for international students, including pre-approved programs, exchange agreements with partner universities, and short-term exchange opportunities.
+2. "Research Opportunities" - The website provides information on research projects, funding opportunities, and student exchange programs available to DKU students.
+3. "Summer Programs" - You can find details about summer internship programs, research assistantships, and other study abroad experiences offered by faculty members.
+
+To access these resources, follow the instructions provided in the course approval process, including registering for an individual advising session with the Office of Global Education or seeking advice from their academic advisor.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.03524136543273926 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What are the steps to change my major?
+Answer: Based on the available information, it appears that changing majors requires completing a certain set of courses or meeting specific requirements. However, there is no direct guidance on how to change your major based on the provided data.
+
+The recommended electives and courses listed are for the current major, which seems to be in Behavioral Science (BEHAVSCI). If you were to take these courses, they would suggest that BEHAVSCI is a suitable major.
+
+To change majors, it might be helpful to consult with an academic advisor or conduct further research on the requirements and electives for the desired major.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.03331303596496582 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What is the core curriculum for Computer Science majors?
+Answer: Given the fields `context`, `question`, and the provided courses as part of the Stanford University computer science curriculum, we can deduce that:
+
+- The core curriculum typically includes a combination of foundational courses in computer science.
+- These typically include data structures, algorithms, programming languages, software engineering, discrete mathematics, and computer architecture.
+
+Therefore, based on this information, we can infer that:
+
+`[[ ## reasoning ## ]]`: There is no specific dissection required here as the context directly informs us about what's covered in a typical Computer Science major curriculum. Thus, it simply states "This requires knowledge of the course subjects covered by the major."
+
+`[[ ## answer ## ]]`: The provided courses cover all aspects necessary for a computer science major:
+1. Introduction to Programming and Data Structures (COMPSCI 201)
+2. Discrete Math for Computer Science (COMPSCI 203)
+3. Introduction to Artificial Intelligence (COMPSCI 204)
+
+Therefore, the full set of answer fields would be:
+
+`[[ ## reasoning ## ]]
+There is no specific dissection required here as the context directly informs us about what's covered in a typical Computer Science major curriculum.
+
+`[[ ## answer ## ]]
+{answer}
+ COMPSCI 201 Introduction to Programming and Data Structures (4 credits)
+COMPSCI 203 Discrete Math for Computer Science (4 credits)
+COMPSCI 204 Introduction to Artificial Intelligence (4 credits)
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.039902448654174805 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: How do I access the online library resources?
+Answer: The following steps can be taken to access the online library resources:
+
+1. The Online Learning Environment (OLE) provides access to various online library resources, including e-books, journals, databases, and more.
+2. Students can search for available resources using the OLE's discovery tool or browse through the relevant sections of the website.
+3. Some popular online library resources include:
+* E-book collections
+* Journals and academic publications
+* Databases such as EBSCOHost, ProQuest, and LexisNexis
+* Online articles and research papers
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.03206658363342285 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: Dr. Maria Rodriguez is the current chair for Natural and Applied Sciences.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.03383803367614746 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What common core courses are required for all undergraduates?
+Answer: The corresponding fields are:
+
+• `reasoning`: The required common core courses are China in the World, Global Challenges in Science, Technology and Health, and Ethics, Citizenship and the Examined Life.
+• `answer`: The three required common core courses.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.033234596252441406 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What are the 7 principles of DKU academic advising
+Answer: [[ ## advice for students on how to meet the 7 guiding principles (not provided)]]
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.10605525970458984 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: What happens if I am late on my tuition payment?
+Answer: If you are late on your tuition payment and do not make arrangements to pay on time, you may be subject to additional fees. The specific amount of any penalties would depend on the University's policies and procedures for handling late payments.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.03534388542175293 seconds
+========================================
+
+========================================
+Model: ollama_chat/llama3.2:1b
+Question: Can I apply for on-campus housing?
+Answer: Yes
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.033684730529785156 seconds
+========================================
+
+Average time for each model: ollama_chat/llama3.2:1b
+Total time: 0.764962911605835 seconds
+Average time per question: 0.058843300892756537 seconds
+Testing model: ollama_chat/qwen3:0.6b
+Loading ollama_chat/qwen3:0.6b LLM...
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: How do I get my transcript?
+Answer: To get your transcript, submit it from your host institution to the Office of Registrar at DKU. All courses approved for transfer are listed at Duke Kunshan, but grades are not recorded for the purpose of grade point averaging.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.05288267135620117 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What is the process for applying for graduation?
+Answer: The process includes applying in the Slate system, selecting the Regular Decision plan, submitting applications on specific dates, and receiving decisions.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.03416848182678223 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: Can I do a literature review for my signature work?
+Answer: Yes, you can do a literature review for your signature work. It would be part of your scholarly or creative/creative/Design projects, which are designed to incorporate original academic research.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.035291194915771484 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What resources are available for mental health support on campus?
+Answer: The resources available for mental health support on campus are:  
+1. **Student Care Services**: Provide support, assessments, and education for students in distress.  
+2. **Health Education Workshops**: Educate on emergency response and health practices.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.03569483757019043 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: How can I find information about study abroad programs?
+Answer: The information about study abroad programs can be found on the Office of Global Education website (https://globaled.dukekunshan.edu.cn) or through the Office of International Student Services.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.04214143753051758 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What are the steps to change my major?
+Answer: 1. Consult your matriculation year's bulletin to verify course prerequisites.  
+2. Follow the recommended electives as specified in the course table.  
+3. Ensure you consult the requirements for your specific class year if prerequisites are not met.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.038199424743652344 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What is the core curriculum for Computer Science majors?
+Answer: The core curriculum for Computer Science majors includes mathematical reasoning, programming concepts, discrete mathematics, and artificial intelligence algorithms. It covers topics such as computational problem-solving skills, data structures, logic, programming, and advanced topics like discrete math and AI algorithms.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.03322649002075195 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: How do I access the online library resources?
+Answer: There is no information provided in the given context about accessing online library resources.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.042626380920410156 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: None of the information provided in the context is related to a chair.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.04085350036621094 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What common core courses are required for all undergraduates?
+Answer: The common core courses required for all undergraduates are:  
+- China in the World (GCHINA)  
+- Global Challenges in Science, Technology, and Health (GLOCHALL)  
+- Ethics, Citizenship, and the Examined Life (ETHLDR)
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.0403895378112793 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What are the 7 principles of DKU academic advising
+Answer: The 7 principles of DKU academic advising are:  
+1. Fostering academic integrity and ethical standards.  
+2. Providing personalized and supportive academic guidance.  
+3. Encouraging collaboration and interdisciplinary learning.  
+4. Promoting problem-based learning and critical thinking.  
+5. Ensuring student success through structured academic programs.  
+6. Supporting students in navigating academic challenges.  
+7. Building a community centered around mutual respect and growth.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.04184579849243164 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: What happens if I am late on my tuition payment?
+Answer: Tuition refunds are not included unless specific conditions are met, such as a leave of absence or withdrawal.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.0339198112487793 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:0.6b
+Question: Can I apply for on-campus housing?
+Answer: No, there is no direct information available in the context about applying for on-campus housing. The focus is on room assignment processes and preferences.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.03893733024597168 seconds
+========================================
+
+Average time for each model: ollama_chat/qwen3:0.6b
+Total time: 0.5101768970489502 seconds
+Average time per question: 0.03924437669607309 seconds
+Testing model: ollama_chat/qwen3:4b
+Loading ollama_chat/qwen3:4b LLM...
+========================================
+Model: ollama_chat/qwen3:4b
+Question: How do I get my transcript?
+Answer: Submit an official transcript from your host institution to DKU's Office of Registrar.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.05821394920349121 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What is the process for applying for graduation?
+Answer: Students must submit the "Apply for Graduation" form through the Duke Kunshan University student information system by the established deadlines to officially notify the university that they expect to have completed all degree requirements and receive their diploma on a specific graduation date.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.033051490783691406 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: Can I do a literature review for my signature work?
+Answer: Yes, you can do a literature review for your Signature Work if you are pursuing a Scholarly project, as it is part of the background research required for academic research in this category.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.03450775146484375 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What resources are available for mental health support on campus?
+Answer: Student Care provides confidential, proactive support, assessment, response, and education for students experiencing distress or at risk. Community members can refer students via https://dukekunshan-advocate.symplicity.com/care_report/, and emergencies should be addressed through campus emergency services (120 or campus hotline).
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.03241539001464844 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: How can I find information about study abroad programs?
+Answer: Students can find information about study abroad programs on the Office of Global Education website (https://globaled.dukekunshan.edu.cn) or by arranging an individual advising session with the Office.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.042946815490722656 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What are the steps to change my major?
+Answer: The context provided does not include information about the steps to change a major. The document describes elective courses and requirements but does not outline any process for changing academic majors.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.03874373435974121 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What is the core curriculum for Computer Science majors?
+Answer: COMPSCI 201 (Introduction to Programming and Data Structures) and COMPSCI 203 (Discrete Math for Computer Science)
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.03383588790893555 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: How do I access the online library resources?
+Answer: The provided context does not include information about accessing online library resources. Students should consult the university's library website or contact the library directly for assistance.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.0326235294342041 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: The context does not provide information about the current chair for Natural and Applied Sciences.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.03276491165161133 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What common core courses are required for all undergraduates?
+Answer: China in the World (Year 1), Global Challenges in Science, Technology and Health (Year 2), and Ethics, Citizenship and the Examined Life (Year 3)
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.033632516860961914 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What are the 7 principles of DKU academic advising
+Answer: The provided context does not include information about the 7 principles of DKU academic advising.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.03244376182556152 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: What happens if I am late on my tuition payment?
+Answer: The context does not provide information about what happens if a student is late on tuition payments.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.035880327224731445 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:4b
+Question: Can I apply for on-campus housing?
+Answer: Yes, all undergraduate students at DKU are required to apply for on-campus housing through the Mercury system before the school year begins.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.04096651077270508 seconds
+========================================
+
+Average time for each model: ollama_chat/qwen3:4b
+Total time: 0.4820265769958496 seconds
+Average time per question: 0.0370789674612192 seconds
+Testing model: ollama_chat/qwen3:8b
+Loading ollama_chat/qwen3:8b LLM...
+========================================
+Model: ollama_chat/qwen3:8b
+Question: How do I get my transcript?
+Answer: To obtain your transcript, you should contact the Office of Registrar at Duke Kunshan University and request an official transcript from your host institution. Ensure the transcript includes all credits and grades earned at the host institution. Note that grades from transferred courses are listed on your permanent record but do not contribute to your DKU grade point average.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.05542635917663574 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What is the process for applying for graduation?
+Answer: The process for applying for graduation involves submitting the "Apply for Graduation" form through the Duke Kunshan University student information system to officially notify the university of intent to graduate. This confirms completion of all degree requirements, including general education, major, credits from Duke faculty, signature work, and regional-specific criteria. Students must submit the form by deadlines and will receive diploma form details via their university email.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.036080121994018555 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: Can I do a literature review for my signature work?
+Answer: Yes, you can include a literature review as part of your Signature Work process, as it is part of the background research required in your junior year. However, your final Signature Work product must go beyond a literature review. For Scholarly projects, this means presenting original research in a 25-30 page paper. For Creative/Design projects, it involves creating a substantial non-academic product (e.g., art, policy paper) with an explanatory text. The literature review is a step toward your final work, not the work itself.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.0382227897644043 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What resources are available for mental health support on campus?
+Answer: Resources for mental health support on campus include:  
+1. **Student Accessibility Service Office (SASO)**: Provides accommodations for students with mental health disabilities (e.g., psychological disorders, ADHD) through tailored support and a team-based eligibility assessment process. Contact: SASO@dukekunshan.edu.cn.  
+2. **Student Care**: Offers confidential counseling, crisis intervention, and support for students in distress. Referrals can be made via [https://dukekunshan-advocate.symplicity.com/care_report/](https://dukekunshan-advocate.symplicity.com/care_report/).
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.03327679634094238 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: How can I find information about study abroad programs?
+Answer: To find information about study abroad programs, visit the Office of Global Education website at [https://globaled.dukekunshan.edu.cn](https://globaled.dukekunshan.edu.cn) or arrange an individual advising session with the Office of Global Education. They provide details on preapproved programs, financial planning, and costs associated with study away opportunities.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.03444027900695801 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What are the steps to change my major?
+Answer: The steps to change your major are not addressed in the provided documents. For specific guidance, consult your university's academic advising office or review your institution's official policies on changing majors, as this process typically involves submitting a petition, meeting with advisors, and fulfilling any additional requirements.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.04160666465759277 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What is the core curriculum for Computer Science majors?
+Answer: The core curriculum for Computer Science majors includes:  
+1. **COMPSCI 101 Introduction to Computer Science**  
+2. **COMPSCI 201 Introduction to Programming and Data Structures**  
+3. **COMPSCI 203 Discrete Math for Computer Science**  
+4. **COMPSCI 205 Computer Organization and Programming**  
+5. **COMPSCI 204 Introduction to Artificial Intelligence** (as a specialized core component).
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.03394031524658203 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: How do I access the online library resources?
+Answer: The context provided does not include information on how to access online library resources. You may need to consult the university's library website or contact library staff for assistance.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.032892704010009766 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: The current chair for Natural and Applied Sciences is not mentioned in the provided context.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.03275322914123535 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What common core courses are required for all undergraduates?
+Answer: The common core courses required for all undergraduates are:  
+1. China in the World (Year 1)  
+2. Global Challenges in Science, Technology and Health (Year 2)  
+3. Ethics, Citizenship and the Examined Life (Year 3)
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.03386950492858887 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What are the 7 principles of DKU academic advising
+Answer: The context provided does not include information about the 7 principles of DKU academic advising. The text focuses on diversity, academic integrity, community standards, and disciplinary processes rather than advising principles.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.03333020210266113 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: What happens if I am late on my tuition payment?
+Answer: The context provided does not specify any consequences for late tuition payments. You may need to consult the university's financial services office or review additional financial policies for details on tuition payment deadlines and repercussions.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.03472709655761719 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:8b
+Question: Can I apply for on-campus housing?
+Answer: Yes, all undergraduate students at Duke Kunshan University are required to reside on campus, and you can apply for on-campus housing through the Residence Life process. Room assignments are managed via the Mercury system, and you must submit preferences and sign a Room Assignment Agreement. Details about the application process, timelines, and preferences are available on the provided website: [https://www.dukekunshan.edu.cn/campus-life/residence-life/applying-for-a-room-assignment/](https://www.dukekunshan.edu.cn/campus-life/residence-life/applying-for-a-room-assignment/).
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.03454709053039551 seconds
+========================================
+
+Average time for each model: ollama_chat/qwen3:8b
+Total time: 0.4751131534576416 seconds
+Average time per question: 0.03654716565058781 seconds
+Testing model: ollama_chat/qwen3:14b
+Loading ollama_chat/qwen3:14b LLM...
+========================================
+Model: ollama_chat/qwen3:14b
+Question: How do I get my transcript?
+Answer: To obtain your transcript, you must request an official transcript directly from the host institution where you completed the courses. Ensure the transcript includes credits and grades earned, as DKU requires this for transfer credit evaluation. Once received, submit the official transcript to the Office of Registrar at Duke Kunshan University for processing.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 82
+  - ug_bulletin2023-24.pdf | Page: 31
+  - ug_bulletin2024-25.pdf | Page: 330
+Time taken for this question: 0.05174374580383301 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What is the process for applying for graduation?
+Answer: To apply for graduation at Duke Kunshan University, students must submit the "Apply for Graduation" form through the university's student information system. This form officially notifies the university of the student's intent to graduate. Students must ensure they have completed all degree requirements, including general education, their major, a specified number of credits from courses taught or co-taught by Duke faculty, signature work, and any additional requirements for students from mainland China, Hong Kong, Macau, or Taiwan. The form must be submitted by the established deadlines. Information regarding the online diploma form is sent to prospective graduates via their Duke Kunshan University email address.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 69
+  - ug_bulletin2023-24.pdf | Page: 29
+  - ug_bulletin2023-24.pdf | Page: 31
+Time taken for this question: 0.03393220901489258 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: Can I do a literature review for my signature work?
+Answer: Yes, you can conduct a literature review as part of your Signature Work. For Scholarly projects, a literature review is a standard component of the research process and would be included in your formal proposal and final written product. It aligns with the background research phase and the expectations for generating original academic work.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 24
+  - ug_bulletin2024-25.pdf | Page: 27
+  - ug_bulletin2024-25.pdf | Page: 63
+Time taken for this question: 0.034211158752441406 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What resources are available for mental health support on campus?
+Answer: Duke Kunshan University offers the following mental health resources:  
+1. **Student Care**: Provides confidential support, assessment, and education for students in distress or at risk. Referrals can be made via [this link](https://dukekunshan-advocate.symplicity.com/care_report/). For emergencies, students or community members should contact 120 or the campus emergency hotline.  
+2. **Student Accessibility Service Office (SASO)**: Offers accommodations and reasonable modifications for students with disabilities, including psychological disorders and mental health conditions, to ensure equal access to university programs. Students are encouraged to consult the Campus Health Clinic for further guidance.  
+
+These services aim to create a supportive environment for mental well-being and academic success.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 91
+  - ug_bulletin2025-26.pdf | Page: 89
+  - ug_bulletin2023-24.pdf | Page: 90
+Time taken for this question: 0.04006171226501465 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: How can I find information about study abroad programs?
+Answer: To find information about study abroad programs, you can visit the Office of Global Education website at https://globaled.dukekunshan.edu.cn or arrange an individual advising session with the Office. These resources provide guidance on financial planning, program costs, and course approval processes.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 82
+  - ug_bulletin2024-25.pdf | Page: 92
+  - ug_bulletin2025-26.pdf | Page: 76
+Time taken for this question: 0.03343677520751953 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What are the steps to change my major?
+Answer: The information provided does not include steps for changing your major. To learn how to change your major, consult your university’s official academic policies, speak with an academic advisor, or review the relevant sections of your institution’s bulletin or website that outline procedures for changing majors.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 211
+  - ug_bulletin2025-26.pdf | Page: 118
+  - ug_bulletin2023-24.pdf | Page: 203
+Time taken for this question: 0.03416872024536133 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What is the core curriculum for Computer Science majors?
+Answer: The core curriculum for Computer Science majors includes foundational courses such as **COMPSCI 101** (Introduction to Computer Science), **COMPSCI 201** (Introduction to Programming and Data Structures), **COMPSCI 203** (Discrete Math for Computer Science), and **COMPSCI 205** (Computer Organization and Programming). These courses provide essential skills in programming, data structures, discrete mathematics, and computer systems, forming the basis for advanced study in the field.
+Sources:
+  - ug_bulletin2025-26.pdf | Page: 251
+  - ug_bulletin2024-25.pdf | Page: 305
+  - ug_bulletin2023-24.pdf | Page: 304
+Time taken for this question: 0.033818960189819336 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: How do I access the online library resources?
+Answer: The context provided does not include information about accessing online library resources. For assistance with library services, you may need to contact Duke Kunshan University's library directly or consult the campus resources listed in Part 10: Majors and Courses for detailed guidance.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 75
+  - ug_bulletin2024-25.pdf | Page: 75
+  - ug_bulletin2025-26.pdf | Page: 73
+Time taken for this question: 0.03470158576965332 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: Who is the current chair for Natural and Applied Sciences?
+Answer: The context does not provide information about the current chair for Natural and Applied Sciences. The available text focuses on program details and tracks within Environmental Science but does not mention administrative roles or individuals.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 154
+  - ug_bulletin2024-25.pdf | Page: 152
+  - ug_bulletin2025-26.pdf | Page: 143
+Time taken for this question: 0.0328679084777832 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What common core courses are required for all undergraduates?
+Answer: The required common core courses for all undergraduates are:  
+1. **China in the World** (Year 1)  
+2. **Global Challenges in Science, Technology and Health** (Year 2)  
+3. **Ethics, Citizenship and the Examined Life** (Year 3)  
+
+These courses are part of the 12-credit General Education requirement and must be taken sequentially during the designated academic years.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 19
+  - ug_bulletin2023-24.pdf | Page: 21
+  - ug_bulletin2023-24.pdf | Page: 93
+Time taken for this question: 0.03508472442626953 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What are the 7 principles of DKU academic advising
+Answer: The information about the "7 principles of DKU academic advising" is not available in the provided context. The text discusses academic integrity, community standards, and university governance but does not address academic advising principles.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 12
+  - ug_bulletin2023-24.pdf | Page: 37
+  - ug_bulletin2025-26.pdf | Page: 36
+Time taken for this question: 0.03322458267211914 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: What happens if I am late on my tuition payment?
+Answer: The information provided does not address the consequences of late tuition payments. You should consult the University's financial office or billing policies for details on late fees or payment deadlines.
+Sources:
+  - ug_bulletin2024-25.pdf | Page: 55
+  - ug_bulletin2025-26.pdf | Page: 55
+  - ug_bulletin2024-25.pdf | Page: 38
+Time taken for this question: 0.042197227478027344 seconds
+========================================
+
+========================================
+Model: ollama_chat/qwen3:14b
+Question: Can I apply for on-campus housing?
+Answer: Yes, all undergraduate students at Duke Kunshan University are required to reside on campus during their four years of study. On-campus housing is managed by Residence Life, and room assignments are made through the Mercury system before the school year begins.
+Sources:
+  - ug_bulletin2023-24.pdf | Page: 85
+  - ug_bulletin2023-24.pdf | Page: 34
+  - ug_bulletin2023-24.pdf | Page: 68
+Time taken for this question: 0.039530038833618164 seconds
+========================================
+
+Average time for each model: ollama_chat/qwen3:14b
+Total time: 0.47897934913635254 seconds
+Average time per question: 0.036844565318180963 seconds
