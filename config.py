@@ -1,4 +1,3 @@
-import os
 # Database
 DB_NAME = "vector_db"
 DB_HOST = "localhost"
@@ -12,7 +11,15 @@ EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 EMBED_DEVICE = "cuda"
 EMBED_DIM = 384
 LM_NAME = "ollama_chat/llama2:13b" # DSPY LLM name
-
+LM_TESTS = [
+    "ollama_chat/llama3.1:8b",
+    "ollama_chat/llama3.2:1b",
+    "ollama_chat/llama3.2:2b",
+    "ollama_chat/qwen3:1.3b",
+    "ollama_chat/qwen3:4b",
+    "ollama_chat/qwen3:8b",
+    "ollama_chat/qwen3:14b",
+]
 
 
 # Chunking

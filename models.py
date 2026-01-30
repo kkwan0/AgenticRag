@@ -19,3 +19,10 @@ def get_lm(): # initialize LLM once
         _lm = dspy.LM(LM_NAME, api_base='http://localhost:11434', api_key='')
         dspy.configure(lm=_lm)
     return _lm
+def get_named_lm(name: str): # initialize LLM once
+    global _lm
+    if _lm is None:
+        print(f"Loading {name} LLM...")
+        _lm = dspy.LM(name, api_base='http://localhost:11434', api_key='')
+        dspy.configure(lm=_lm)
+    return _lm
