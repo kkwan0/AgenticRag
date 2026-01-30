@@ -1,6 +1,6 @@
 import dspy
 from db import connect_vector_store
-from models import get_embed_model
+from models import get_embed_model, get_rerank_model
 from llama_index.core.vector_stores import VectorStoreQuery
 from config import TOP_K
 import time
@@ -14,10 +14,14 @@ class PGVectorRetriever(dspy.Module): # DSPy has own module for retrievers
         self.vector_store = connect_vector_store() # From db.py
         self.embed_model = get_embed_model() # From models.py
         self.k = k # number of top similar chunks to retrieve
+        self.rerank_top_k = k
+        self.rerank_model = get_rerank_model() # Reranker model
         
         self.last_embedding_time = 0 # timing metrics
         self.last_query_time = 0
         self.total_time = 0
+        self.last_rerank_time = 0
+        
         
         super().__init__()
 
@@ -41,6 +45,22 @@ class PGVectorRetriever(dspy.Module): # DSPy has own module for retrievers
             if results.nodes:
                 passages = [node.get_content() for node in results.nodes]
                 sources = [{**node.metadata, "text": node.get_content()} for node in results.nodes]
+                rerank_start = time.time()
+                pairs = [[query, passage] for passage in passages]
+                scores = self.rerank_model.compute_score(pairs)
+                if isinstance(scores, list):
+                    scored_items = list(zip(scores, passages, sources))
+                else:
+                    scored_items = list(zip([scores], passages, sources))
+                
+                scored_items.sort(key=lambda x: x[0], reverse=True)
+                scored_items = scored_items[:self.rerank_top_k]
+                
+                # Extract reranked passages and sources
+                passages = [item[1] for item in scored_items]
+                sources = [item[2] for item in scored_items]
+                
+                self.last_rerank_time = time.time() - rerank_start
             else:
                 passages = []
                 sources = []

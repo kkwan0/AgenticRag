@@ -1,11 +1,12 @@
 import dspy
 import time
 from sentence_transformers import SentenceTransformer
+from FlagEmbedding import FlagModel, FlagReranker
 from llama_index.llms.llama_cpp import LlamaCPP
-from config import EMBED_MODEL_NAME
 from llama_index.llms.ollama import Ollama
-from config import LM_NAME
+from config import LM_NAME, EMBED_MODEL_NAME, RERANK_MODEL_NAME
 _embed_model = None
+_rerank_model = None
 _lm = None
 _lm_cache = {}
 _load_times = {}
@@ -41,3 +42,13 @@ def print_model_load_times():
     for model_type, load_time in _load_times.items():
         print(f"{model_type.capitalize()} model load time: {load_time:.2f} seconds")
     print("--- End of model load times ---\n")
+    
+def get_rerank_model():
+    global _rerank_model, _load_times
+    
+    if _rerank_model is None:
+        print("Loading reranker model...")
+        start = time.time()
+        _rerank_model = FlagReranker(RERANK_MODEL_NAME, use_fp16=True)
+        _load_times["reranker"] = time.time() - start
+    return _rerank_model

@@ -7,9 +7,10 @@ DB_USER = "user"
 TABLE_NAME = "ug_bulletins"
 
 # Models
-EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+EMBED_MODEL_NAME = "BAAI/bge-base-en-v1.5"
 EMBED_DEVICE = "cuda"
-EMBED_DIM = 384
+EMBED_DIM = 768 # 384 for minilm
+RERANK_MODEL_NAME = "BAAI/bge-reranker-v2-m3"
 LM_NAME = "ollama_chat/qwen3:8b" # DSPY LLM name
 LM_TESTS = [
     "ollama_chat/llama3.1:8b",
