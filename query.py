@@ -1,5 +1,5 @@
 import dspy
-from models import get_lm, get_named_lm
+from models import get_lm, get_named_lm, print_model_load_times
 from rag import RAG
 from config import TOP_K, LM_TESTS
 from dataclasses import dataclass
@@ -29,6 +29,16 @@ def _get_rag():
 def query(question: str) -> QueryResult:
     result = _get_rag()(question=question)
     return QueryResult(answer=result.answer, sources=result.sources)
+
+def query_and_time(question: str) -> QueryResult:
+    start_time = time.time()
+    result = query(question)
+    end_time = time.time()
+    print_model_load_times()
+    
+    print(f"Time taken for query: {end_time - start_time} seconds")
+    return result
+
 
 def test_models():
     for model_name in LM_TESTS:

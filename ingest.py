@@ -1,7 +1,7 @@
 
 from sentence_transformers import SentenceTransformer
 from db import create_database, connect_vector_store
-from documents import load_documents, chunk_documents, embed_nodes
+from documents import load_documents, chunk_documents, embed_nodes, print_document_timings
 from config import EMBED_MODEL_NAME, EMBED_DEVICE, EMBED_DIM
 
 def ingest(file_paths: list[str]):
@@ -15,6 +15,8 @@ def ingest(file_paths: list[str]):
     documents = load_documents(file_paths)
     nodes = chunk_documents(documents)
     nodes = embed_nodes(nodes, embed_model)
+    print_document_timings()
+    
     
     print(f"Adding {len(nodes)} nodes to vector store...")
     connect_vector_store().add(nodes) # type: ignore

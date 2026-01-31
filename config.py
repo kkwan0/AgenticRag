@@ -10,7 +10,8 @@ TABLE_NAME = "ug_bulletins"
 EMBED_MODEL_NAME = "BAAI/bge-base-en-v1.5"
 EMBED_DEVICE = "cuda"
 EMBED_DIM = 768 # 384 for minilm
-RERANK_MODEL_NAME = "BAAI/bge-reranker-v2-m3"
+RERANK_MODEL_NAME_FLAG = "BAAI/bge-reranker-v2-m3"
+RERANK_MODEL_NAME_SENTENCE_TRANSFORMER = "mixedbread-ai/mxbai-rerank-base-v2"
 LM_NAME = "ollama_chat/qwen3:8b" # DSPY LLM name
 LM_TESTS = [
     "ollama_chat/llama3.1:8b",

@@ -1,10 +1,10 @@
 import dspy
 import time
-from sentence_transformers import SentenceTransformer
-from FlagEmbedding import FlagModel, FlagReranker
+from sentence_transformers import SentenceTransformer, CrossEncoder
+from FlagEmbedding import FlagModel, FlagReranker # type: ignore
 from llama_index.llms.llama_cpp import LlamaCPP
 from llama_index.llms.ollama import Ollama
-from config import LM_NAME, EMBED_MODEL_NAME, RERANK_MODEL_NAME
+from config import LM_NAME, EMBED_MODEL_NAME, RERANK_MODEL_NAME_FLAG, RERANK_MODEL_NAME_SENTENCE_TRANSFORMER
 _embed_model = None
 _rerank_model = None
 _lm = None
@@ -49,6 +49,7 @@ def get_rerank_model():
     if _rerank_model is None:
         print("Loading reranker model...")
         start = time.time()
-        _rerank_model = FlagReranker(RERANK_MODEL_NAME, use_fp16=True)
+        # _rerank_model = FlagReranker(RERANK_MODEL_NAME, use_fp16=True)
+        _rerank_model = CrossEncoder(RERANK_MODEL_NAME_SENTENCE_TRANSFORMER, device='cuda')
         _load_times["reranker"] = time.time() - start
     return _rerank_model
