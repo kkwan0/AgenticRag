@@ -1,4 +1,5 @@
-from query import query, query_and_time, test_models
+import time
+from query import query, query_and_time, test_models, test_questions
 from ingest import ingest
 import argparse
 from config import FILE_PATHS
@@ -14,13 +15,17 @@ def main():
         #if flag set to rebuild, ingest documents
     #already ingested
     # answer = query("Can I do a literature review for my signature work?")
-    answer = query_and_time("What are the graduation requirements for a Bachelor of Science degree?")
-    print(answer.answer)
+    # run_id = str(int(time.time()))  # Unique per run
+    # question = "How can I find the campus events calendar?"
+    # unique_question = f"{question} (Run ID: {run_id})"
+    # answer = query_and_time(unique_question) # gets query time
+    # print(answer.answer)
     # print(answer.formatted_sources())
     
     
     
-    
+    test_questions()
+
     # test_models()
     
     

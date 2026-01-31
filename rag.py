@@ -13,7 +13,7 @@ class PGVectorRetriever(dspy.Module): # DSPy has own module for retrievers
     def __init__(self, k=TOP_K):
         self.vector_store = connect_vector_store() # From db.py
         self.embed_model = get_embed_model() # From models.py
-        self.k = k # number of top similar chunks to retrieve
+        self.k = k * 5 # number of top similar chunks to retrieve, overretrieve more for reranking
         self.rerank_top_k = k
         self.rerank_model = get_rerank_model() # Reranker model
         
@@ -36,8 +36,8 @@ class PGVectorRetriever(dspy.Module): # DSPy has own module for retrievers
                 passages = [node.get_content() for node in results.nodes]
                 sources = [{**node.metadata, "text": node.get_content()} for node in results.nodes]
                 pairs = [[query, passage] for passage in passages]
-                # scores = self.rerank_model.compute_score(pairs) # for FlagReranker
-                scores = self.rerank_model.predict([[query, passage] for passage in passages])
+                scores = self.rerank_model.compute_score(pairs) # for FlagReranker
+                # scores = self.rerank_model.predict(pairs) # SentenceTransformer CrossEncoder
                 if isinstance(scores, list):
                     scored_items = list(zip(scores, passages, sources))
                 else:
@@ -58,12 +58,8 @@ class PGVectorRetriever(dspy.Module): # DSPy has own module for retrievers
 class RAG(dspy.Module): # RAG module combining retriever and generator
     def __init__(self, k=TOP_K):
         self.retriever = PGVectorRetriever(k=k) 
-        self.generate = dspy.ChainOfThought(GenerateAnswer) # uses DSPY's CoT for generation, has that step by step style
-        
-       
-        
+        self.generate = dspy.ChainOfThought(GenerateAnswer) # uses DSPY's CoT for generation, has that step by step style 
     def forward(self, question: str): # takes user question
-            
             result = self.retriever(question) # retrieve relevant passages
             context = result.passages # retrieved passages
             sources = result.sources

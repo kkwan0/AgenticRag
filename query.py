@@ -39,7 +39,6 @@ def query_and_time(question: str) -> QueryResult:
     print(f"Time taken for query: {end_time - start_time} seconds")
     return result
 
-
 def test_models():
     for model_name in LM_TESTS:
         run_id = str(int(time.time()))  # Unique per run
@@ -66,3 +65,24 @@ def test_models():
         print(f"Average time for each model: {model_name}")
         print(f"Total time: {sum(timelist)} seconds")
         print(f"Average time per question: {sum(timelist) / len(timelist)} seconds")
+        
+def test_questions():
+    rag = _get_rag()
+    run_id = str(int(time.time()))  # Unique per run
+    timelist = []
+    for question in QUERY_QUESTIONS:
+        start_question = time.time()
+        unique_question = f"{question} (Run ID: {run_id})"
+        result = rag(question=unique_question)
+        print("========================================")
+        print(f"Question: {question}")
+        print(f"Answer: {result.answer}")
+        print("Sources:")
+        for source in result.sources:
+            print(f"  - {source.get('file_name')} | Page: {source.get('page_label')}")
+        end_question = time.time()
+        timelist.append(end_question - start_question)
+        print(f"Time taken for this question: {end_question - start_question} seconds")
+        print("========================================\n")
+    print(f"Total time: {sum(timelist)} seconds")
+    print(f"Average time per question: {sum(timelist) / len(timelist)} seconds")

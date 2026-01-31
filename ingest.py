@@ -15,7 +15,7 @@ def ingest(file_paths: list[str]):
     documents = load_documents(file_paths)
     nodes = chunk_documents(documents)
     nodes = embed_nodes(nodes, embed_model)
-    print_document_timings()
+    print_document_timings() # prints chunk, load, and embed times
     
     
     print(f"Adding {len(nodes)} nodes to vector store...")
