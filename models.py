@@ -55,7 +55,7 @@ def get_rerank_model():
     if _rerank_model is None:
         print("Loading reranker model...")
         start = time.time()
-        _rerank_model = FlagReranker(RERANK_MODEL_NAME_FLAG, use_fp16=True)
+        _rerank_model = FlagReranker(RERANK_MODEL_NAME_FLAG, use_fp16=True, device='cuda')
         # _rerank_model = CrossEncoder(RERANK_MODEL_NAME_SENTENCE_TRANSFORMER, device='cuda')
         _load_times["reranker"] = time.time() - start
     return _rerank_model

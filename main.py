@@ -6,6 +6,7 @@ from config import FILE_PATHS
 
 
 def main():
+    end_to_end_latency_start = time.time()
     parser = argparse.ArgumentParser() 
     parser.add_argument('--rebuild', action='store_true', help='Rebuild the vector store by ingesting documents')
     # Parse the command-line arguments, add rebuild argument
@@ -21,11 +22,9 @@ def main():
     # answer = query_and_time(unique_question) # gets query time
     # print(answer.answer)
     # print(answer.formatted_sources())
-    
-    
-    
     test_questions()
-
+    end_to_end_latency = time.time() - end_to_end_latency_start
+    print(f"End-to-end latency: {end_to_end_latency} seconds")
     # test_models()
     
     

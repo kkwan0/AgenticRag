@@ -3,7 +3,7 @@ from llama_index.core import SimpleDirectoryReader
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.schema import TextNode, MetadataMode
 from sqlalchemy import text
-from config import CHUNK_SIZE, BATCH_SIZE
+from config import CHUNK_SIZE, BATCH_SIZE, CHUNK_OVERLAP
 import time
 
 _document_timings = {
@@ -28,7 +28,7 @@ def load_documents(file_paths: List[str]):
     
 def chunk_documents(documents) -> List[TextNode]:
     chunk_time = time.time()
-    text_parser = SentenceSplitter(chunk_size=CHUNK_SIZE)
+    text_parser = SentenceSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
     
     nodes = []
     for doc in documents:

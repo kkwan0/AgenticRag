@@ -21,14 +21,18 @@ LM_TESTS = [
     "ollama_chat/qwen3:8b",
     "ollama_chat/qwen3:14b",
 ]
+TEMPERATURE = 0.1
+MAX_TOKENS = 1024
+TOP_P = 0.3
+REPEAT_PENALTY = 1.1
 
 
 # Chunking
-CHUNK_SIZE = 1024
+CHUNK_SIZE = 512
 BATCH_SIZE = 32
+CHUNK_OVERLAP = 256
 # Retrieval
-SIMILARITY_TOP_K = 3
-TOP_K = 3
+TOP_K = 3 # same for reranker
 
 #Other
 
